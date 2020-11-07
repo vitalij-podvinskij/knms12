@@ -1,0 +1,14 @@
+while True:
+    alph = 'абвгґдеєжзиіїйклмнопрстуфхцчшщьюяабвгґдеєжзиіїйклмнопрстуфхцчшщьюя'
+    encrypt = input('Введіть слово: ')
+    key = int(input('Введіть ключ:'))
+    encrypt = encrypt.lower()
+    encrypted = ''
+    for letter in encrypt:
+        position = alph.find(letter)
+        newPosition = position + key
+        if letter in alph:
+            encrypted = encrypted + alph[newPosition]
+        else:
+            encrypted = encrypted + letter
+    print('ваш шифр', encrypted)
