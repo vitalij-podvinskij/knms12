@@ -5,16 +5,16 @@ while True:
 
     result = None
 
-    if operation =="+":
+    if operation == "+":
         result = x + y
-    elif operation =="-":
+    elif operation == "-":
         result = x - y
-    elif operation =="*":
+    elif operation == "*":
         result = x * y
-    elif operation =="/":
+    elif operation == "/":
         result = x / y
     else:
         print("Дія не підтримується")
 
     if result is not None:
-        print('результат',result)
+        print('результат', result)
