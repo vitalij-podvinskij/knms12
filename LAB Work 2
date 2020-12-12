@@ -1,0 +1,10 @@
+a = str(input('Введіть текст: '))
+c = input('Введіть цифру від 1 до 2: ')
+if c == ('2'):
+    d = {}
+    for x in set(a):
+        d[x] = a.count(x)
+    print(d)
+if c == ('1'):
+    a = sorted(a.split())
+    print(a)
